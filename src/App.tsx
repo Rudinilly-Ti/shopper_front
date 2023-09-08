@@ -160,12 +160,12 @@ function App() {
             }
           })
           if(await productIsAPack(item.product_code)){
-            error.push('Não existe atualização para os produtos deste pacote')
+            error.push('There is no update for the products in this pack')
             product.error = error
           }
     
           if(await productIsInAPack(item.product_code)){
-            error.push('Não existe atualização para o pacote em que este produto está')
+            error.push('There is no update for the pack in which this product is')
             product.error = error
           }
         }
